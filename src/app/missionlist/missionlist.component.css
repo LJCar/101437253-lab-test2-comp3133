@@ -23,15 +23,17 @@ h1 {
   border-radius: 12px;
   padding: 15px;
   width: 250px;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  min-height: 260px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.4s ease;
+  cursor: pointer;
 }
 
 .mission-card:hover {
   transform: translateY(-5px);
   background-color: #c4d1e3;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .mission-patch {

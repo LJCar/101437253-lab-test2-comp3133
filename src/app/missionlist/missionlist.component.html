@@ -2,12 +2,17 @@
   <h1>SpaceX Launch Missions</h1>
 
   <div class="missions-grid">
-    <div *ngFor="let mission of launchData" class="mission-card">
+    <div
+      *ngFor="let mission of launchData"
+      class="mission-card"
+      (click)="goToDetails(mission.flight_number)"
+      role="button"
+      tabindex="0"
+    >
       <h2>{{ mission.mission_name }}</h2>
       <img [src]="mission.links.mission_patch_small" alt="Mission Patch" class="mission-patch" />
-
-      <p><strong>Year: {{ mission.launch_year }}</strong></p>
-      <p><strong>Flight Number: {{ mission.flight_number }}</strong></p>
+      <p><strong>Year:</strong> {{ mission.launch_year }}</p>
+      <p><strong>Flight Number:</strong> {{ mission.flight_number }}</p>
     </div>
   </div>
 </div>

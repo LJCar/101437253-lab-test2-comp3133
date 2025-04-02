@@ -1,0 +1,37 @@
+.details-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.mission-patch {
+  width: 120px;
+  height: auto;
+  margin: 20px 0;
+}
+
+.external-links a {
+  margin: 0 10px;
+  color: #007acc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #005f99;
+}
