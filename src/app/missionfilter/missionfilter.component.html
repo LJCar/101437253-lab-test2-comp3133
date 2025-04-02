@@ -1,0 +1,10 @@
+<div class="filter-container">
+  <label for="year">Filter by Year:</label>
+  <input
+    type="text"
+    id="year"
+    [(ngModel)]="year"
+    (input)="onYearChange()"
+  />
+  <button *ngIf="year" (click)="clearFilter()" class="clear-btn">Cancel Filter</button>
+</div>

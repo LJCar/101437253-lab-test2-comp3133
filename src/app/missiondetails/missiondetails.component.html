@@ -9,8 +9,8 @@
   <p><strong>Details:</strong> {{ mission.details || 'No additional details.' }}</p>
 
   <div class="external-links">
-    <a *ngIf="mission.links.article_link" [href]="mission.links.article_link" target="_blank">Article</a> |
-    <a *ngIf="mission.links.wikipedia" [href]="mission.links.wikipedia" target="_blank">Wikipedia</a> |
+    <a *ngIf="mission.links.article_link" [href]="mission.links.article_link" target="_blank">Article</a>
+    <a *ngIf="mission.links.wikipedia" [href]="mission.links.wikipedia" target="_blank">Wikipedia</a>
     <a *ngIf="mission.links.video_link" [href]="mission.links.video_link" target="_blank">Video</a>
   </div>
 

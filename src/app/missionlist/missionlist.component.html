@@ -1,9 +1,11 @@
 <div class="missions-container">
   <h1>SpaceX Launch Missions</h1>
 
+  <app-missionfilter (yearChanged)="onYearChanged($event)"></app-missionfilter>
+
   <div class="missions-grid">
     <div
-      *ngFor="let mission of launchData"
+      *ngFor="let mission of launchYearData"
       class="mission-card"
       (click)="goToDetails(mission.flight_number)"
       role="button"
